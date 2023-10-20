@@ -15,10 +15,10 @@ public class Product {
 
     private String brand;
     private String ImageUrl;
-    @Column(scale = 13,precision = 2)
+    @Column(scale = 2,precision = 13)
     private BigDecimal retailPrice;
 
-    @Column(scale = 13,precision = 2)
+    @Column(scale = 2,precision = 13)
     private BigDecimal purchasePrice;
 
     public long getId() {

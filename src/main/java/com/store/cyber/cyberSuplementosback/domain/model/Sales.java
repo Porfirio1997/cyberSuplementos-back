@@ -22,13 +22,13 @@ public class Sales {
     @OneToMany
     private List<Product> product;
 
-    @Column(scale = 13,precision = 2)
+    @Column(scale = 2,precision = 13)
     private BigDecimal discount;
 
-    @Column(scale = 13,precision = 2)
+    @Column(scale = 2,precision = 13)
     private BigDecimal total;
 
-    @Column(scale = 13,precision = 2)
+    @Column(scale = 2,precision = 13)
     private BigDecimal tax;
 
     public long getId() {
