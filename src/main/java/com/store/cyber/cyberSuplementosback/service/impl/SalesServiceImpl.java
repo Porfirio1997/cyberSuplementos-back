@@ -3,9 +3,10 @@ package com.store.cyber.cyberSuplementosback.service.impl;
 import com.store.cyber.cyberSuplementosback.domain.model.Sales;
 import com.store.cyber.cyberSuplementosback.domain.repository.SalesRepository;
 import com.store.cyber.cyberSuplementosback.service.SalesService;
+import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
-
+@Service
 public class SalesServiceImpl implements SalesService {
 
     private final SalesRepository salesRepository;
