@@ -11,8 +11,10 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String name;
+    @Column(unique = true)
+    private String GTIN;
 
+    private String name;
 
     private String brand;
 
@@ -25,12 +27,24 @@ public class Product {
     @Column(scale = 2,precision = 13)
     private BigDecimal purchasePrice;
 
+
+
+
+
     public long getId() {
         return id;
     }
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getGTIN() {
+        return GTIN;
+    }
+
+    public void setGTIN(String GTIN) {
+        this.GTIN = GTIN;
     }
 
     public String getName() {
