@@ -13,8 +13,12 @@ public class Product {
 
     private String name;
 
+
     private String brand;
-    private String ImageUrl;
+
+    private String imageUrl;
+
+    private int quantity;
     @Column(scale = 2,precision = 13)
     private BigDecimal retailPrice;
 
@@ -46,11 +50,19 @@ public class Product {
     }
 
     public String getImageUrl() {
-        return ImageUrl;
+        return imageUrl;
     }
 
     public void setImageUrl(String imageUrl) {
-        ImageUrl = imageUrl;
+        imageUrl = imageUrl;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public BigDecimal getRetailPrice() {
